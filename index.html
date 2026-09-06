@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConSite - Gerador de QR Code</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Script offline/local para geração do QR Code sem dependência de internet -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Banner/Tag Código Aberto -->
+        <span class="open-source-badge">Código Aberto</span>
+
+        <!-- Logo com Animação -->
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="ConSite Logo" class="app-logo" onerror="this.style.display='none'; document.getElementById('alt-logo').style.display='block';">
+            <h1 id="alt-logo" class="logo-fallback" style="display: none;">ConSite</h1>
+        </div>
+
+        <p class="tagline">Converta qualquer link em QR Code instantaneamente.</p>
+
+        <!-- Formulário de Entrada -->
+        <div class="input-container">
+            <input type="url" id="linkInput" placeholder="Cole o link aqui (ex: https://...)" autocomplete="off">
+            <button id="generateBtn">
+                <span>Gerar QR Code</span>
+            </button>
+        </div>
+
+        <!-- Área de Exibição do QR Code -->
+        <div id="qrWrapper" class="qr-wrapper hidden">
+            <div id="qrcode"></div>
+            <button id="downloadBtn" class="download-btn">Baixar QR Code</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
