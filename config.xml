@@ -7,5 +7,17 @@
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
-</widget>
 
+    <!-- Configuração do Ícone do Aplicativo -->
+    <icon src="www/assets/logo.png" />
+
+    <platform name="android">
+        <!-- Define o logo.png como ícone padrão no Android -->
+        <icon src="www/assets/logo.png" density="ldpi" />
+        <icon src="www/assets/logo.png" density="mdpi" />
+        <icon src="www/assets/logo.png" density="hdpi" />
+        <icon src="www/assets/logo.png" density="xhdpi" />
+        <icon src="www/assets/logo.png" density="xxhdpi" />
+        <icon src="www/assets/logo.png" density="xxxhdpi" />
+    </platform>
+</widget>
