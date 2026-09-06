@@ -1,2 +1,43 @@
-# ConSite
-Conversor de qualquer site em QR code 
+# ConSite 🌐📱
+
+> **ConSite** é uma aplicação leve, moderna e de código aberto (*open-source*) projetada para converter qualquer hiperligação ou URL num código QR de forma instantânea. Funciona tanto diretamente no navegador (online) quanto instalado como aplicativo Android (offline).
+
+---
+
+## 🌟 Funcionalidades
+
+- **Multiplataforma:** Utilize diretamente no navegador via Web ou instale o APK no seu dispositivo Android.
+- **Funcionamento Offline:** Funciona 100% sem ligação à internet no formato APK.
+- **Interface Moderna:** Design limpo em tons de azul e branco com animações fluidas.
+- **Download Instantâneo:** Guarde o QR Code gerado em formato PNG na galeria do seu dispositivo com um clique.
+- **Código Aberto:** Projeto transparente e livre para contribuições da comunidade.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+Este projeto foi construído utilizando tecnologias nativas e ferramentas de automação na nuvem:
+
+- **Frontend Web:** HTML5, CSS3, JavaScript (Vanilla)
+- **Biblioteca QR Code:** [QRCode.js](https://github.com/davidshimjs/qrcodejs)
+- **Framework Mobile:** Apache Cordova
+- **Automação de Build:** GitHub Actions (Workflows para compilação do APK)
+
+---
+
+## 📁 Estrutura do Repositório
+
+```text
+ConSite/
+├── .github/
+│   └── workflows/
+│       └── build.yml        # Workflow de compilação do APK no GitHub Actions
+├── www/
+│   ├── assets/
+│   │   └── logo.png         # Logótipo e ícone da aplicação
+│   ├── index.html           # Estrutura principal da interface
+│   ├── style.css            # Estilos, paleta azul/branco e animações
+│   └── script.js            # Lógica de geração e conversão para QR Code
+├── config.xml               # Configurações do Apache Cordova / Android
+├── package.json             # Dependências e metadados do projeto
+└── README.md                # Documentação do repositório
