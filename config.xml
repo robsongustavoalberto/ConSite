@@ -1,0 +1,11 @@
+<?xml class='1.0' encoding='utf-8'?>
+<widget id="com.consite.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets">
+    <name>ConSite</name>
+    <description>Conversor de Links para QR Code - Open Source</description>
+    <author email="contato@consite.org">ConSite Open Source Project</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+</widget>
+
