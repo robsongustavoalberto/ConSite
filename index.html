@@ -20,11 +20,12 @@
             <h1 id="alt-logo" class="logo-fallback" style="display: none;">ConSite</h1>
         </div>
 
-        <p class="tagline">Converta qualquer link em QR Code instantaneamente.</p>
+        <!-- Texto Atualizado -->
+        <p class="tagline">Converta qualquer informação em QR Code instantaneamente.</p>
 
         <!-- Formulário de Entrada -->
         <div class="input-container">
-            <input type="url" id="linkInput" placeholder="Cole o link aqui (ex: https://...)" autocomplete="off">
+            <input type="text" id="linkInput" placeholder="Cole a sua informação ou link aqui..." autocomplete="off">
             <button id="generateBtn">
                 <span>Gerar QR Code</span>
             </button>
@@ -34,6 +35,24 @@
         <div id="qrWrapper" class="qr-wrapper hidden">
             <div id="qrcode"></div>
             <button id="downloadBtn" class="download-btn">Baixar QR Code</button>
+        </div>
+
+        <!-- Botão para Baixar APK no MediaFire (Para quem acede ao site) -->
+        <div class="apk-download-container" style="margin-top: 20px;">
+            <a href="https://www.mediafire.com/file/xxq495nhnfneh0x/app-release.apk/file" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                <button type="button" style="background-color: #2563eb; color: #ffffff; padding: 10px 16px; border-radius: 8px; font-size: 14px; font-weight: 600; border: none; cursor: pointer; width: 100%;">
+                    Baixar App Android (APK)
+                </button>
+            </a>
+        </div>
+
+        <!-- Rodapé com Link para o Repositório do GitHub -->
+        <div class="footer-github" style="margin-top: 20px; font-size: 13px; color: #64748b;">
+            <p>Gostou do projeto? 
+                <a href="https://github.com/robsongustavoalberto/ConSite" target="_blank" rel="noopener noreferrer" style="color: #0284c7; font-weight: 600; text-decoration: underline;">
+                    Colabore ou dê suporte no GitHub
+                </a>
+            </p>
         </div>
     </div>
 
